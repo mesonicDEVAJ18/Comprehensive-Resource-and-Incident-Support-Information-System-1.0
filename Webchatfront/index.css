@@ -150,6 +150,7 @@ body{
     padding-right: 15px;
     font-family: Varela Round;
     margin-top: 10px;
+    background-image: url("download.jpeg");
   }
   #chat_input{
     width: 95%;
@@ -164,15 +165,18 @@ body{
     height: 100%;
     float: left;
     font-size: 18px;
-    background-color: Transparent;
+    background-color: #000000;
     text-align: right;
     color: #ccc;
+    background-image: url("download.jpeg");
+    z-index: 999;
   }
   #chat_input_send.enabled{
     color: #000000;
-    background-color: Transparent;
+    background-color: #ffffff;
     cursor: pointer;
-  
+    background-image: url("download.jpeg");
+    z-index: 999;
   }
   #chat_logout_container{
     width: 100%;
@@ -301,6 +305,15 @@ body{
     border-radius: 5px;
     cursor: pointer;
     z-index: 999; /* Ensure button is above other elements */
+}
+
+.positioned-image {
+  position: absolute;
+  bottom: 100px;  /* Adjust for desired distance from the top */
+  right: 460px;   /* Adjust for desired distance from the left */
+  width: 35px;  /* Optional: Set image width */
+  height: 35px; /* Optional: Set image height */
+  z-index: 0;
 }
 
   
